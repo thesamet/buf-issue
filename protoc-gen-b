@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+protoc --encode google.protobuf.compiler.CodeGeneratorResponse plugin.proto << 'EOF'
+  file: <
+    name: "a.txt"
+    insertion_point: "X"
+    content: "inserted at X\n"
+  >
+  file: <
+    name: "a.txt"
+    insertion_point: "Y"
+    content: "inserted at Y\n"
+  >
+EOF

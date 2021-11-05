@@ -1,0 +1,6 @@
+version: v1
+plugins:
+- name: a
+  out: out
+- name: b
+  out: out

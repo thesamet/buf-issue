@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+protoc --encode google.protobuf.compiler.CodeGeneratorResponse plugin.proto << 'EOF'
+  file: <
+    name: "a.txt"
+    content: "X:\n@@protoc_insertion_point(X)\nY:\n@@protoc_insertion_point(Y)\n"
+  >
+EOF
